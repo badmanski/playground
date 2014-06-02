@@ -1,3 +1,6 @@
 %h1.page-header Welcome to Sandbox
 
 - content_for :title, 'Welcome to Sandbox'
+
+- content_for :javascript do
+  = javascript_include_tag 'app'
