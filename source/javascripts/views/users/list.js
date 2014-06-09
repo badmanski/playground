@@ -9,7 +9,8 @@ var UserList = Backbone.View.extend({
     var users = new Users();
     users.fetch({
       success: function(data) {
-        var template = _.template($('#user-list-template').html(), { users: data });
+        var template = _.template($('#user-list-template').html(),
+                                  { users: data.models });
         scope.$el.html(template);
       }
     });

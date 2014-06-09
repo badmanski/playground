@@ -2,9 +2,11 @@
   %table.table.table-hover
     %thead
       %tr
-        %td Name
-        %td Email
+        %th Name
+        %th Email
     %tbody
+      <% _.each(users, function(user) { %>
       %tr
-        %td world
-        %td hello
+        %td <%= user.get('name') %>
+        %td <%= user.get('email') %>
+      <% });%>
