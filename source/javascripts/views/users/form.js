@@ -9,7 +9,12 @@ var UserForm = Backbone.View.extend({
   },
   createUser: function(e) {
     var userData = $(e.currentTarget).serializeObject();
-    console.log(userData);
+    var user = new User();
+    user.save({user: userData}, {
+      success: function() {
+        alert('User saved');
+      }
+    });
     return false;
   }
 });
