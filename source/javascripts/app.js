@@ -19,10 +19,15 @@ $.fn.serializeObject = function() {
 }
 
 var users = new UserList();
+var userForm = new UserForm();
 var router = new Router();
 
 router.on('route:index', function() {
   users.render();
+});
+
+router.on('route:form', function() {
+  userForm.render();
 });
 
 Backbone.history.start();
