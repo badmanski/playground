@@ -2,10 +2,12 @@
 
 .row
   .col-md-6#list
+  .col-md-6#form
 
 = partial 'templates'
 
 - content_for :title, 'Welcome to Sandbox'
 
 - content_for :javascript do
-  = javascript_include_tag 'router', 'views/users/list', 'app'
+  = javascript_include_tag ['router', 'collections/users', 'models/user',
+                             'views/users/list', 'views/users/form', 'app']
