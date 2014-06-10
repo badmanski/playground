@@ -1,7 +1,3 @@
-var Users = Backbone.Collection.extend({
-  url: '/users'
-});
-
 var UserList = Backbone.View.extend({
   el: '#list',
   render: function() {
