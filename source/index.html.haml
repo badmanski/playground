@@ -1,5 +1,9 @@
 %h1.page-header Welcome to Sandbox
 
+.row
+  .col-md-3
+    = text_field_tag nil, value: Date.today, class: 'form-control', id: 'datepicker'
+
 - content_for :title, 'Welcome to Sandbox'
 
 - content_for :javascript do
