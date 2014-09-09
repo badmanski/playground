@@ -1,5 +1,37 @@
 %h1.page-header Welcome to Sandbox
 
+%form  
+  .col-md-6.col-md-offset-3
+    .form-group
+      = label_tag :location
+      = text_field_tag :location, class: 'form-control', id: 'autocomplete', required: true
+    .row
+      .col-md-6
+        .form-group
+          = label_tag :apartment_number
+          = text_field_tag :flat_number, class: 'form-control', id: 'flat_number'
+        .form-group
+          = label_tag :street_name
+          = text_field_tag :route, class: 'form-control', id: 'route', required: true
+        .form-group
+          = label_tag :county
+          = text_field_tag :administrative_area_level_1, class: 'form-control', id: 'administrative_area_level_1', required: true
+      .col-md-6
+        .form-group
+          = label_tag :house_number
+          = text_field_tag :street_number, class: 'form-control', id: 'street_number', required: true
+        .form-group
+          = label_tag :city
+          = text_field_tag :locality, class: 'form-control', id: 'locality', required: true
+        .form-group
+          = label_tag :country
+          = text_field_tag :country, class: 'form-control', id: 'country', required: true
+        .form-group
+          = label_tag :postal_code
+          = text_field_tag :postal_code, class: 'form-control', id: 'postal_code', required: true
+
+    = submit_tag 'Submit', class: 'btn btn-success'
+
 - content_for :title, 'Welcome to Sandbox'
 
 - content_for :javascript do
