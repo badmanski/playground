@@ -42,4 +42,8 @@ $(function() {
     if ($(this).val() == '')
       resetForm();
   });
+
+  $('#address-form').on('submit', function(e) {
+    e.preventDefault();
+  });
 });
