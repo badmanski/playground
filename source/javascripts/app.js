@@ -37,4 +37,9 @@ function resetForm() {
 
 $(function() {
   initialize();
+
+  $('#autocomplete').on('input', function() {
+    if ($(this).val() == '')
+      resetForm();
+  })
 });
