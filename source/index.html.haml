@@ -16,6 +16,9 @@
         .form-group
           = label_tag :county
           = text_field_tag :administrative_area_level_1, class: 'form-control', id: 'administrative_area_level_1', required: true
+        .form-group
+          = label_tag :postal_code
+          = text_field_tag :postal_code, class: 'form-control', id: 'postal_code', required: true
       .col-md-6
         .form-group
           = label_tag :house_number
@@ -26,9 +29,6 @@
         .form-group
           = label_tag :country
           = text_field_tag :country, class: 'form-control', id: 'country', required: true
-        .form-group
-          = label_tag :postal_code
-          = text_field_tag :postal_code, class: 'form-control', id: 'postal_code', required: true
 
 - content_for :title, 'Welcome to Sandbox'
 
