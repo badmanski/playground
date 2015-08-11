@@ -1,5 +1,11 @@
 %h1.page-header Welcome to Sandbox
 
+.col-md-4.col-md-offset-4
+  %form
+    .form-group
+      = text_field_tag :foo_bar, class: 'form-control'
+    = submit_tag 'Save changes', class: 'btn btn-default btn-block'
+
 - content_for :title, 'Welcome to Sandbox'
 
 - content_for :javascript do
