@@ -1,6 +1,14 @@
 %h1.page-header Stanislav Gorski
 
-= partial 'summary'
+
+.row
+  .col-md-4
+    = image_tag 'avatar.jpeg', class: 'img-rounded img-responsive'
+  .col-md-8
+    = partial 'summary'
+    = partial 'experience'
+    = partial 'projects'
+%br
 
 - content_for :title, 'Stanislav Gorski @ GitHub'
 
