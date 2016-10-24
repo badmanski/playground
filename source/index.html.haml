@@ -1,6 +1,56 @@
-%h1.page-header Welcome to Sandbox
+%h3 Order 0002323243 123ABC Automobiles IT Solutions
+.label.label-info vip
+.label.label-info full service
+.label.label-info own sale
+.label.label-info in
+
+.row
+  .col-sm-6
+    VSKDDAC13U0025262 / 55 000 km
+    .clearfix
+    C220 CDI
+  .col-sm-6
+    Payer: Stanislav Gorski
 
 - content_for :title, 'Welcome to Sandbox'
+
+%h3 Customer complaints
+%form
+  .row
+    .col-sm-6
+      .form-group= text_area_tag nil, class: 'form-control'
+    .col-sm-5
+      .form-group= select_tag ['foo', 'bar'], class: 'form-control'
+      .form-group= select_tag ['foo', 'bar'], class: 'form-control'
+    .col-sm-1
+      .btn.btn-default x
+  .row
+    .col-sm-6
+      .form-group= text_area_tag nil, class: 'form-control'
+    .col-sm-5
+      .form-group= select_tag ['foo', 'bar'], class: 'form-control'
+      .form-group= select_tag ['foo', 'bar'], class: 'form-control'
+    .col-sm-1
+      .btn.btn-default x
+  .row
+    .col-sm-6
+      .form-group= text_area_tag nil, class: 'form-control'
+    .col-sm-5
+      .form-group= select_tag ['foo', 'bar'], class: 'form-control'
+      .form-group= select_tag ['foo', 'bar'], class: 'form-control'
+    .col-sm-1
+      .btn.btn-default x
+  .row
+    .col-sm-6
+      .form-group= text_area_tag nil, class: 'form-control'
+    .col-sm-5
+      .form-group= select_tag ['foo', 'bar'], class: 'form-control'
+      .form-group= select_tag ['foo', 'bar'], class: 'form-control'
+    .col-sm-1
+      .btn.btn-default x
+.row
+  .col-sm-12
+    .btn.btn-lg.btn-success add
 
 - content_for :javascript do
   = javascript_include_tag 'app'
