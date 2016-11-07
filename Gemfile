@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
-ruby '2.2.3'
+ruby '2.3.1'
 
 gem 'middleman'
-gem 'middleman-livereload', '~> 3.4.2'
+gem 'middleman-livereload'
 gem 'haml'
