@@ -125,3 +125,9 @@ DEPENDENCIES
   haml
   middleman
   middleman-livereload (~> 3.4.2)
+
+RUBY VERSION
+   ruby 2.2.3p173
+
+BUNDLED WITH
+   1.16.0
